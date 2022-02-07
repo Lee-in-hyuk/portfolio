@@ -73,3 +73,37 @@ h1 {
     font-size: 50px;
     font-weight: 400;
 }
+/* // 첫번째 섹션 */
+/* 두번째 섹션 */
+#sec_section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+#sec_title {
+    width: 500px;
+    height: 40vh;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+#sec_title h1 {
+    padding-top: 140px;
+    font-size: 100px;
+}
+#sec_content {
+    background-color: aqua;
+    width: 1170px;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#sec_content1 {
+    width: 33.3333%;
+}
+#sec_content2 {
+    width: 33.3334%;
+}
+#sec_content3 {
+    width: 33.3333%;
+}
