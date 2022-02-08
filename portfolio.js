@@ -28,6 +28,12 @@ menu1.addEventListener('click',function(){
 menu2.addEventListener('click',function(){
     window.scrollTo({top:969, behavior: "smooth"})
 })
+menu3.addEventListener('click',function(){
+    window.scrollTo({top:969*2, behavior: "smooth"})
+})
+// menu4.addEventListener('click',function(){
+//     window.scrollTo({top:969*3, behavior: "smooth"})
+// })
 // 첫번째 섹션
 const content = `안녕하세요, 프론트엔드 개발자 이인혁입니다.`;
 const text = document.querySelector('.title');
