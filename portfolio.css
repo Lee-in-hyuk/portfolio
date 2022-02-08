@@ -1,5 +1,41 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
+a { color: inherit; text-decoration: none; }
+li { list-style: none; }
+body {
+    font-family: 'Dongle', sans-serif;
+    background-image: url('image/body_bg.png');
+}
+/* 헤더 */
+#header {
+    z-index: 100000;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+#header ul {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header ul li {
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+#header ul li:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+}
+#header ul li:target {
+    font-weight: bold;
+}
+/* // 헤더 */
 /* 첫번째 섹션 */
 #fir_section {
     width: 100%;
@@ -12,6 +48,7 @@
 #bg_video {
     width: 100%;
     height: 100vh;
+    opacity: 0.8;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -22,25 +59,6 @@
     width: 540px;
     height: 80px;
     position: relative;
-}
-@keyframes 가로선 {
-    0%{
-        width: 0;
-    }
-    50%{
-        width: 69%;
-    }
-    100%{
-        width: 100%;
-    }
-}
-@keyframes imo {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 0.7;
-    }
 }
 #bottomline {
     position: absolute;
@@ -68,10 +86,48 @@
     animation-fill-mode: forwards;
 }
 .small_font { font-size: 16px;}
+@keyframes 가로선 {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 68%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes imo {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.7;
+    }
+}
 h1 {
     font-family: 'Dongle', sans-serif;
     font-size: 50px;
     font-weight: 400;
+}
+#mouse_i {
+    position: absolute;
+    bottom: 80px;
+    text-align: center;
+    animation: motion 1.0s linear infinite;
+}
+@keyframes motion {
+    from{
+        bottom: 80px;
+    }
+    to{
+        bottom: 60px;
+    }
+}
+#mouse_t {
+    position: absolute;
+    bottom: 120px;
+    font-size: 16px;
 }
 /* // 첫번째 섹션 */
 /* 두번째 섹션 */
@@ -80,30 +136,99 @@ h1 {
     height: 100vh;
     text-align: center;
 }
+#sec_section p {
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 400;
+}
 #sec_title {
     width: 500px;
     height: 40vh;
     margin: 0 auto;
-    background-color: antiquewhite;
 }
 #sec_title h1 {
-    padding-top: 140px;
+    padding-top: 120px;
     font-size: 100px;
 }
+#sec_title strong { font-size: 40px; }
 #sec_content {
-    background-color: aqua;
     width: 1170px;
     height: 60vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-top: 40px;
 }
+#sec_content h1 { font-size: 80px; }
 #sec_content1 {
-    width: 33.3333%;
+    width: 30%;
+    position: relative;
+}
+#sec_content1 h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+#sec_content1 p {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    padding-top: 80px;
+    z-index: 0;
 }
 #sec_content2 {
-    width: 33.3334%;
+    margin: 0 5%;
+    width: 30%;
+    position: relative;
+}
+#sec_content2 h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+#sec_content2 p {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    padding-top: 80px;
+    z-index: 0;
 }
 #sec_content3 {
-    width: 33.3333%;
+    width: 30%;
+    position: relative;
 }
+#sec_content3 h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+#sec_content3 p {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    padding-top: 80px;
+    z-index: 0;
+}
+/* // 두번째 섹션 */
+/* 세번째 섹션 */

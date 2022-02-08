@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Gamja+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
+    <script src="jquery/jquery-3.4.1.min.js"></script> 
+    <script src="jquery/jquery.mousewheel.js"></script>
+    <script src="jquery/jquery.easing.1.3.js"></script>
     <title>Hyuk's portfolio</title>
 </head>
 <body>
     <div id="pofol_wrap">
-        <section id="fir_section">
+        <!-- 헤더 -->
+        <div id="header">
+            <ul>
+                <li id="main">Main</li>
+                <li id="intro">Intro</li>
+                <li id="skills">Skills</li>
+                <li id="projects">Projects</li>
+            </ul>
+        </div>
+        <!-- 첫번째 섹션 -->
+        <section id="fir_section" class="wheel">
             <div id="bg_video">
                 <video muted autoplay loop>
                     <source src="image/Clouds - 58474.mp4" type="video/mp4">
@@ -22,30 +35,53 @@
                 <div id="bottomline"></div>
                 <div id="imoticon"><i class="material-icons small_font">star_rate</i></div>
             </div>
+            <div id="mouse_t"><p>마우스 휠</p></div>
+            <div id="mouse_i">
+                <i class="material-icons">mouse</i>
+            </div>
         </section>
-        <section id="sec_section">
+        <!-- 두번째 섹션 -->
+        <section id="sec_section" class="wheel">
             <div id="sec_title">
                 <h1>Intro</h1>
-                <p>현재는 프론트엔드 신입 개발자,</p><br><p>미래엔 <strong>풀스택 개발자</strong></p>
+                <p>현재는 프론트엔드 신입 개발자,</p><p>미래엔 <strong>풀스택 개발자</strong></p>
             </div>
             <div id="sec_content">
                 <div id="sec_content1">
                     <h1>배우게 된 계기</h1>
-                    <p>우연히 지인의 정보를 통해 '프론트엔드 개발' 교육을 알게 되었습니다.
-                        대학 시절 컴공과를 졸업했지만 '백엔드 개발' 분야에 두려움이 있었던 저였기에
-                        기대반 두려움반을 갖고 전문 교육 기관에서 상담을 받았습니다.
-                        
+                    <p>우연히 지인의 정보를 통해<br>'프론트엔드 개발' 교육을 알게 되었고,<br>
+                        컴공과 4년제를 졸업해서<br>조금은 친근하게 다가갈 수 있었습니다.<br>
+                        평소에 웹이나 앱의 UI에 관심이 있던 저는<br>빠르게 흥미를 가졌고,
+                        실력이 향상됨을 느끼면서<br>더 많은 배움에 대해 욕심이 생겼습니다.
                     </p>
                 </div>
                 <div id="sec_content2">
                     <h1>장단점</h1>
-                    <p></p>
+                    <p>고2때 부터 꾸준히 알바 및 직장을 다녔고<br>
+                        저의 이미지는 항상<br>동료들에겐 친근함과 편안함,<br>사장님에겐 책임감과 성실함이었습니다.<br>
+                        학창시절 소심함과 수동적이었던 성격 탓에<br>삶의 목표가 없었지만<br>
+                        다양한 사회 경험을 통해 개선할 수 있었고,<br>
+                        최종 목표 또한 명확해졌습니다.
+                    </p>
                 </div>
                 <div id="sec_content3">
                     <h1>최종 목표</h1>
-                    <p></p>
+                    <p>현재는 프론트엔드에 발만 담근 수준이지만,<br>
+                        꾸준한 배움과 성장을 통해<br>
+                        퍼블리셔 - 프론트엔드 - 백엔드의<br>
+                        원활한 소통 역할을 할 수 있는<br>
+                        풀스택 개발자가 최종목표입니다.
+                    </p>
                 </div>
             </div>
+        </section>
+        <!-- 세번째 섹션 -->
+        <section id="thi_section" class="wheel">
+
+        </section>
+        <!-- 네번째 섹션 -->
+        <section id="fou_section" class="wheel">
+
         </section>
     </div>
     <script src="portfolio.js"></script>
