@@ -67,7 +67,7 @@ body {
     height: 5px;
     bottom: 10px;
     left: 0;
-    animation-name: 가로선;
+    animation-name: row_line;
     animation-delay: 3.8s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -80,13 +80,13 @@ body {
     bottom: 75px;
     right: 100px;
     opacity: 0;
-    animation-name: imo;
+    animation-name: appear;
     animation-delay: 6s;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 .small_font { font-size: 16px;}
-@keyframes 가로선 {
+@keyframes row_line {
     0%{
         width: 0;
     }
@@ -97,7 +97,7 @@ body {
         width: 100%;
     }
 }
-@keyframes imo {
+@keyframes appear {
     from{
         opacity: 0;
     }
@@ -110,24 +110,33 @@ h1 {
     font-size: 50px;
     font-weight: 400;
 }
+#mouse_t {
+    position: absolute;
+    bottom: 120px;
+    font-size: 18px;
+    opacity: 0;
+    animation-name: appear;
+    animation-delay: 6s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
 #mouse_i {
     position: absolute;
     bottom: 80px;
     text-align: center;
-    animation: motion 1.0s linear infinite;
+    animation: motion 1.0s linear 6s infinite;
+    animation-delay: 6.3s;
+    opacity: 0;
 }
 @keyframes motion {
     from{
         bottom: 80px;
+        opacity: 1;
     }
     to{
         bottom: 60px;
+        opacity: 1;
     }
-}
-#mouse_t {
-    position: absolute;
-    bottom: 120px;
-    font-size: 16px;
 }
 /* // 첫번째 섹션 */
 /* 두번째 섹션 */
