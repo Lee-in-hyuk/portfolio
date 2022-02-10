@@ -47,3 +47,44 @@ let handle = setInterval(function typing(){
     }
 }, 150);
 // 두번째 섹션
+// 세번째 섹션
+$('.slick').slick({
+    dots:true,
+    centerMode: true,
+    autoplay:false,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  arrows:true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+  // slick infinite 가 맨끝에서 다시 처음으로 돌아갈 때도 트랜지션을 적용시키는 용도
+}).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    if (currentSlide !== nextSlide) {
+        $('.slick-center + .slick-cloned').each(function(index, node) {
+            var $node = $(node);
+            
+            setTimeout(function() {
+                $node.addClass('slick-current');
+                $node.addClass('slick-center');
+            });
+        });
+    }
+});

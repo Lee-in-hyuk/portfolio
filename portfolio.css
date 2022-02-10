@@ -249,11 +249,99 @@ h1 {
 }
 #thi_title {
     width: 500px;
-    height: 40vh;
+    height: 30vh;
     margin: 0 auto;
 }
 #thi_title h1 {
     padding-top: 120px;
     font-size: 100px;
+}
+#thi_content {
+    width: 100%;
+    height: 70vh;
+}
+.slick {
+    width: 1170px;
+    height: 50vh;
+    margin: 0 auto;
+}
+    /* slick버튼 */
+.slick-prev {
+    z-index: 100;
+    left: 370px !important;
+}
+.slick-prev::before {
+    color: black !important;
+}
+.slick-next {
+    z-index: 100;
+    right: 370px !important;
+}
+.slick-next::before {
+    color: black !important;
+}
+    /* slick 리스트 */
+.slick-list {
+    width: 100%;
+    height: 70vh;
+    padding-top: 40px !important;
+    margin: 0 auto !important;
+}
+.post {
+    width: 342px !important;
+    height: 400px !important;
+    padding: 0 10px;
+    position: relative;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+    margin: 0 4px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.post .post_txt {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 30px;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    opacity: 0.1;
+}
+.slick-slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    padding: 0 30px;
+    transition: 0.5s;
+    opacity: 0.3;
+}
+.slick-track { overflow: hidden; padding-bottom: 10px;}
+.slick-slide.slick-center {
+    cursor: pointer;
+}
+.slick-slide.slick-center img{
+    transform: scale(1.2) translate(-40%, -40%);
+    opacity: 1;
+}
+.slick-slide.slick-center:hover .post_txt {
+    animation: post 0.7s linear forwards;
+    opacity: 1;
+}
+@keyframes post {
+    0%{
+        top: 140%;
+    }
+    20% {
+        top: 150%;
+    }
+    100% {
+        top: 50%;
+    }
 }
 /* // 세번째 섹션 */
