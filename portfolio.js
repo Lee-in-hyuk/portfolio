@@ -51,7 +51,7 @@ let handle = setInterval(function typing(){
 $('.slick').slick({
     dots:true,
     centerMode: true,
-    autoplay:false,
+    autoplay:true,
   centerPadding: '60px',
   slidesToShow: 3,
   arrows:true,
