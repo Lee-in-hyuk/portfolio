@@ -22,18 +22,21 @@ const menu2 = document.querySelector('#intro');
 const menu3 = document.querySelector('#skills');
 const menu4 = document.querySelector('#projects');
 
+// const menuHeight = document.querySelector("#header").offsetHeight;
+
+const intro = document.querySelector('#sec_section').offsetTop;
+const skills = document.querySelector('#thi_section').offsetTop;
+
 menu1.addEventListener('click',function(){
     window.scrollTo({top:0, behavior: "smooth"})
 })
 menu2.addEventListener('click',function(){
-    window.scrollTo({top:969, behavior: "smooth"})
+    window.scrollTo({top:intro, behavior: "smooth"})
 })
 menu3.addEventListener('click',function(){
-    window.scrollTo({top:969*2, behavior: "smooth"})
+    window.scrollTo({top:skills, behavior: "smooth"})
 })
-// menu4.addEventListener('click',function(){
-//     window.scrollTo({top:969*3, behavior: "smooth"})
-// })
+
 // 첫번째 섹션
 const content = `안녕하세요, 프론트엔드 개발자 이인혁입니다.`;
 const text = document.querySelector('.title');
