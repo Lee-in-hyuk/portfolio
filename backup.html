@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Gamja+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="jquery/jquery-3.4.1.min.js"></script> 
+    <script src="jquery/jquery.mousewheel.js"></script>
+    <script src="jquery/jquery.easing.1.3.js"></script>
+
+    <script src="jquery/slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    
+    <title>Hyuk's portfolio</title>
+</head>
+<body>
+    <div id="pofol_wrap">
+        <!-- 헤더 -->
+        <div id="header">
+            <ul>
+                <li id="main">Main</li>
+                <li id="intro">Intro</li>
+                <li id="skills">Skills</li>
+                <li id="portfolio"><a href="https://signature-bed.vercel.app/">Portfolio 1</a></li>
+                <!-- <li id="portfolio"><a href="https://green-lamp-client-sable.vercel.app/">Portfolio 2</a></li> -->
+                <li id="github"><a href="https://github.com/Lee-in-hyuk">inhyuk-github</a></li>
+            </ul>
+        </div>
+        <!-- 첫번째 섹션 -->
+        <section id="fir_section" class="wheel">
+            <div id="bg_video">
+                <video muted autoplay loop>
+                    <source src="image/Clouds - 58474.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="fir_txt">
+                <h1 class="title"></h1>
+                <div id="bottomline"></div>
+                <div id="imoticon"><i class="material-icons small_font">star_rate</i></div>
+            </div>
+            <div id="mouse_t"><p>마우스 휠</p></div>
+            <div id="mouse_i">
+                <i class="material-icons">mouse</i>
+            </div>
+        </section>
+        <!-- 두번째 섹션 -->
+        <section id="sec_section" class="wheel">
+            <div id="sec_title">
+                <h1>Intro</h1>
+                <p>현재는 퍼블리셔이자 프론트엔드 개발자,</p><p>미래엔 <strong>풀스택 개발자</strong></p>
+            </div>
+            <div id="sec_content">
+                <div id="sec_content1">
+                    <h1>배우게 된 계기</h1>
+                    <p>우연히 지인의 정보를 통해<br>'프론트엔드 개발' 교육을 알게 되었고,<br>
+                        컴공과 4년제를 졸업해서<br>조금은 친근하게 다가갈 수 있었습니다.<br>
+                        평소에 웹이나 앱의 UI에 관심이 있던 저는<br>빠르게 흥미를 가졌고,
+                        실력이 향상됨을 느끼면서<br>더 많은 배움에 대해 욕심이 생겼습니다.
+                    </p>
+                </div>
+                <div id="sec_content2">
+                    <h1>장단점</h1>
+                    <p>고2때 부터 꾸준히 알바 및 직장을 다녔고<br>
+                        저의 이미지는 항상<br>동료들에겐 친근함과 편안함,<br>사장님에겐 책임감과 성실함이었습니다.<br>
+                        학창시절 소심함과 수동적이었던 성격 탓에<br>삶의 목표가 없었지만<br>
+                        다양한 사회 경험을 통해 개선할 수 있었고,<br>
+                        최종 목표 또한 명확해졌습니다.
+                    </p>
+                </div>
+                <div id="sec_content3">
+                    <h1>최종 목표</h1>
+                    <p>현재는 프론트엔드에 발만 담근 수준이지만,<br>
+                        꾸준한 배움과 성장을 통해<br>
+                        퍼블리셔 - 프론트엔드 - 백엔드의<br>
+                        원활한 소통 역할을 할 수 있는<br>
+                        풀스택 개발자가 최종목표입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- 세번째 섹션 -->
+        <section id="thi_section" class="wheel">
+            <div id="thi_title">
+                <h1>Skills</h1>
+            </div>
+            <div id="thi_content">
+                <div class="slick">
+                    <div class="post">
+                        <img src="image/logo/photoshop_logo.png" alt="html">
+                        <div class="post_txt">
+                            웹디자인 제작에 필수 툴 중 하나인 포토샵의 숙련도를 위해
+                            시각디자인 교육 과정을 수료하며
+                            포트폴리오로 광고이미지를 제작했습니다.
+                            디테일하며 일러스트보다 섬세한 작업을 배우기 위해
+                            여러 예제로 숙련도를 쌓았습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/illust_logo.png" alt="html">
+                        <div class="post_txt">
+                            포토샵과 마찬가지로 웹디자인 제작에 필수 툴이라
+                            시각디자인 교육 과정을 통해 숙련도를 높였고,
+                            툴박스 및 서브메뉴가 포토샵에 비해 직관적이라 느껴져서
+                            재밌게 작업할 수 있었습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/html_logo.png" alt="html">
+                        <div class="post_txt">
+                            HTML (HyperText Markup Language)<br/>
+                            모든 배움에 있어서 가장 중요한건<br/>기초라고 생각합니다.<br/>
+                            웹을 이루는 가장 기초적인 구성 요소인 만큼<br/>
+                            입문 초기에 다양한 페이지를 마크업 했었습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/js_logo.png" alt="js">
+                        <div class="post_txt">
+                            JavaScript<br/>
+                            프론트엔드의 가장 기본적인 프로그래밍 언어로써<br/>
+                            다른 응용프로그램을 배우기 위해서라도<br/>
+                            더 많이 접하게 된 언어입니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/css_logo.png" alt="css">
+                        <div class="post_txt">
+                            CSS<br/>
+                            처음 HTML을 통해 마크업을 많이 해봤지만<br/>
+                            일반 웹페이지 같은<br/>
+                            깔끔함을 느끼지 못 했던 부분을<br/>
+                            해소시켜주게 되어 재밌게 공부했었습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/scss_logo.png" alt="scss">
+                        <div class="post_txt">
+                            SCSS<br/>
+                            CSS보다 코드를 단축시킬 수 있어서<br/>
+                            팀원들과 프로젝트를 할 때 좀 더 원활했고,<br/>
+                            mixin기능을 통해<br/>
+                            자주 쓰는 색상 및 폰트 크기 등<br/>
+                            변수를 쓰는 것이 편리했습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/react_logo.png" alt="react">
+                        <div class="post_txt">
+                            REACT<br/>
+                            프론트엔드의 길을 가기 위해선<br/>
+                            거의 필수로 배워야 된다는 라이브러리.<br/>
+                            웹의 규모가 커질수록 체감도 커졌는데,<br/>
+                            특히 라우터를 사용하면서 로딩속도가<br/>
+                            확연히 차이 나서 재밌게 배웠습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/php_logo.png" alt="php">
+                        <div class="post_txt">
+                            PHP<br/>
+                            발만 담근 수준으로,<br/>
+                            MySql에 데이터베이스 연동 및 작업을 진행해봤는데<br/>
+                            어려우면서 동시에 조금씩 해내는 부분에서<br/>
+                            성쾌감이 남달랐습니다..
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/mysql_logo.png" alt="mysql">
+                        <div class="post_txt">
+                            MySql<br/>
+                            대학 시절 컴공과를 졸업해서<br/>
+                            경험해 본 부분이었어서<br/>
+                            배울 때 어려움은 없었습니다.<br/>
+                            데이터베이스를 만드는데 있어선<br/>
+                            재밌게 진행할 수 있었습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/sqlite_logo.png" alt="sqlite">
+                        <div class="post_txt">
+                            Sqlite<br/>
+                            MySql과 달리 처음 접해봐서인지<br/>
+                            조금 어색했지만 비슷한 부분이 있어서<br/>
+                            배움에는 어려움이 덜 했습니다.<br/>
+                            하지만 익숙하지 않아 자주 사용하진 않습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/aws_logo.png" alt="aws">
+                        <div class="post_txt">
+                            AWS(아마존 서버)<br/>
+                            작업한 DB를 배포할 때 써본 경험이 있고,<br/>
+                            포트폴리오 또한 아마존을 통해<br/>
+                            배포할 예정입니다.<br/>
+                            이제 막 입문한 정도의 실력이지만<br/>
+                            현재도 사용 중이라 실무에서도<br/>
+                            활용할 수 있을 것 같습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/heroku_logo.png" alt="heroku">
+                        <div class="post_txt">
+                            Heroku<br/>
+                            서버 배포를 위해 배우게 됐고,<br/>
+                            아마존과 같이 포트폴리오 서버 또한<br/>
+                            이것으로 배포할 예정입니다.<br/>
+                            헤로쿠도 이제 막 입문했지만<br/>
+                            현재도 사용 중이라 실무에서<br/>
+                            활용할 수 있을 것 같습니다.
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/vercel_logo.png" alt="vercel">
+                        <div class="post_txt">
+                            Vercel<br/>
+                            아마존과 같이 작업한 웹페이지를<br/>
+                            배포할 때 쓰게 됐고,<br/>
+                            교육 중에 만든 green lamp 페이지를<br/>
+                            배포한 경험이 있습니다.<br/>
+                            <a href="https://green-lamp-client-gj3jkeo4n-lee-in-hyuk.vercel.app/">green lamp(click!)</a>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="image/logo/flutter_logo.png" alt="flutter">
+                        <div class="post_txt">
+                            Flutter<br/>
+                            앱 개발을 위해 배우기 시작했고,<br/>
+                            디바이스 및 시뮬레이터를 연결해서<br/>
+                            퍼블리싱 및 동작 기능까지<br/>
+                            구현한 경험이 있습니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>
